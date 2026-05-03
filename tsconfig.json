@@ -5,10 +5,14 @@
       "moduleResolution": "bundler",
       "strict": true,
       "jsx": "preserve",
-      "skipLibCheck": true,
       "resolveJsonModule": true,
-      "lib": ["ESNext", "DOM"],
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "lib": ["ESNext", "DOM", "DOM.Iterable"],
+      "skipLibCheck": true,
+      "noEmit": true,
       "types": ["node"],
+      "ignoreDeprecations": "5.0",
       "baseUrl": ".",
       "paths": {
         "@/*": ["./src/*"]

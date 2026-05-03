@@ -26,10 +26,15 @@ export default [
   {
     rules: {
       // Relax rules that are too noisy early on — tighten as the team settles in
-      'vue/multi-word-component-names': 'off',          // Allow single-word names like Button, Input
-      '@typescript-eslint/no-unused-vars': ['warn', {   // Warn instead of error for unused vars
-        argsIgnorePattern: '^_',                         // Allow _unused params
+      'vue/multi-word-component-names': 'off',
+      'vue/max-attributes-per-line': 'off',              // Allow multiple attributes on one line
+      'vue/html-self-closing': 'off',                    // Allow self-closing HTML elements
+      'no-undef': 'off',                                 // TypeScript handles this — ESLint doesn't know TS globals
+      '@typescript-eslint/no-unused-vars': ['warn', {
+        argsIgnorePattern: '^_',
       }],
+      '@typescript-eslint/no-empty-object-type': 'off',  // Needed for Vue shims file
+      '@typescript-eslint/no-explicit-any': 'warn',      // Warn instead of error
     },
   },
 

@@ -11,12 +11,7 @@
       "lib": ["ESNext", "DOM", "DOM.Iterable"],
       "skipLibCheck": true,
       "noEmit": true,
-      "types": ["node"],
-      "ignoreDeprecations": "5.0",
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["./src/*"]
-      }
+      "types": ["node"]
     },
     "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
     "exclude": ["node_modules"]
